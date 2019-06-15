@@ -1,0 +1,293 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: #222f38;
+	text-align: center;
+}
+
+/* Start of Yoda Animation */
+
+#yoda {
+	z-index: -40;
+	position: absolute;
+}
+
+#yoda #head {
+	position: relative;
+	width: 770px;
+	height: 410px;
+}
+
+@media only screen and (max-width: 785px) {
+	#yoda #head {
+		width: 693px;
+		height: 369px;
+	}
+}
+
+@media only screen and (max-width: 710px) {
+	#yoda #head {
+		width: 616px;
+		height: 328px;
+	}
+}
+
+@media only screen and (max-width: 635px) {
+	#yoda #head {
+		width: 539px;
+		height: 287px;
+	}
+}
+
+@media only screen and (max-width: 554px) {
+	#yoda #head {
+		width: 462px;
+		height: 246px;
+	}
+}
+
+@media only screen and (max-width: 462px) {
+	#yoda #head {
+		width: 415px;
+		height: 230px;
+	}
+}
+
+@media only screen and (max-width: 423px) {
+	#yoda #head {
+		width: 373px;
+		height: 207px;
+	}
+}
+
+@media only screen and (max-width: 381px) {
+	#yoda #head {
+		width: 335px;
+		height: 186px;
+	}
+}
+
+@media only screen and (max-width: 356px) {
+	#yoda #head {
+		width: 301px;
+		height: 167px;
+	}
+}
+
+#yoda .ear {
+	position: absolute;
+	top: 35%;
+	width: 30%;
+	height: 33%;
+	background: #716e3b;
+}
+#yoda .ear.left {
+	left: 0;
+	border-radius: 10% 0 0 100%;
+}
+
+#yoda .ear.right {
+	right: 0;
+	border-radius: 0 10% 100% 0;
+}
+
+#yoda .earhole {
+	position: absolute;
+	top: 25%;
+	width: 75%;
+	height: 50%;
+	background: #404213;
+}
+#yoda .earhole.left {
+	left: 10%;
+	border-radius: 10% 30% 0 100%;
+	transform: rotate(10deg);
+}
+#yoda .earhole.right {
+	right: 10%;
+	border-radius: 30% 10% 100% 0;
+	transform: rotate(-10deg);
+}
+
+#yoda #face {
+	position: absolute;
+	width: 46%;
+	left: 27%;
+	height: 90%;
+	border-radius: 50% 50% 35% 35%;
+	background: #716e3b;
+}
+#yoda #chin {
+	position: absolute;
+	bottom: 0;
+	left: 40%;
+	height: 13%;
+	width: 20%;
+	border-bottom: 41px solid #716e3b;
+	border-radius: 50%;
+	z-index: -1;
+}
+
+#yoda #eyes {
+	position: absolute;
+	left: 12.5%;
+	top: 55%;
+	width: 75%;
+	height: 10%;
+	animation: blink 2s infinite;
+}
+
+#yoda .eye {
+	position: absolute;
+	height: 160%;
+	width: 22%;
+	border-radius: 100% 0 100% 0;
+	transform-origin: 50% 50%;
+	transform: rotate(45deg);
+	background: #e2e0c7;
+}
+#yoda .eye.left {
+	left: 5%;
+}
+#yoda .eye.right {
+	right: 5%;
+}
+
+#yoda .eye::before {
+	content: "";
+	display: block;
+	position: absolute;
+
+	width: 130%;
+	height: 130%;
+	border-radius: 40%;
+}
+#yoda .eye.left::before {
+	left: -10%;
+	top: -35%;
+	border-top: 2px solid #404213;
+}
+#yoda .eye.right::before {
+	left: -35%;
+	top: -10%;
+	border-left: 2px solid #404213;
+}
+
+#yoda .eyeball {
+	position: absolute;
+	top: 15%;
+	left: 25%;
+	width: 60%;
+	height: 60%;
+	background: black;
+	border-radius: 50%;
+	z-index: -1;
+}
+#yoda .eyeball::after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 20%;
+	top: 5%;
+	width: 30%;
+	height: 30%;
+	border-radius: 50%;
+	background: #e2e0c7;
+}
+
+#yoda #mouth {
+	width: 38%;
+	height: 3%;
+	position: absolute;
+	left: 31%;
+	top: 88%;
+	border-bottom: 3px solid black;
+	border-top: 3px solid black;
+	border-radius: 33%;
+}
+#yoda #mouth::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: -22%;
+	top: -330%;
+	width: 60%;
+	height: 80%;
+	border-radius: 50%;
+	border-top: 2px solid #404213;
+	transform: rotate(-45deg);
+}
+#yoda #mouth::after {
+	content: "";
+	display: block;
+	position: absolute;
+	right: -22%;
+	top: -330%;
+	width: 60%;
+	height: 80%;
+	border-radius: 50%;
+	border-top: 2px solid #404213;
+	transform: rotate(45deg);
+}
+
+#yoda #nose {
+	width: 15%;
+	height: 5%;
+	position: absolute;
+	border-radius: 50%;
+	border-bottom: 2px solid black;
+	top: 67%;
+	left: 42.5%;
+}
+@keyframes blink {
+	10% {
+		transform: rotateX(89deg);
+	}
+	20% {
+		transform: rotateX(0);
+	}
+}
+
+/* Start of UI */
+
+h1 {
+	margin: 0px;
+	font-size: 40px;
+}
+
+h2 {
+	margin-bottom: 19px;
+	margin-top: 17px;
+}
+
+.input-field {
+	margin: auto;
+	margin-bottom: 420px;
+	color: #fafafaf6;
+	font-family: europa, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.input-box {
+	opacity: 0.7;
+	border-radius: 25px;
+	border: 2px solid black;
+	width: 360px;
+    height: 30px;
+    padding: 5px;
+}
+
+input[type="text"]
+{
+    font-family: consolas;
+	font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
