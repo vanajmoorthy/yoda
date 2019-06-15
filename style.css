@@ -278,14 +278,13 @@ h2 {
 .input-box {
 	opacity: 0.7;
 	border-radius: 25px;
-	border: 2px solid black;
+	border: none;
 	width: 360px;
     height: 30px;
     padding: 5px;
 }
 
-input[type="text"]
-{
+input[type="text"] {
     font-family: consolas;
 	font-weight: 400;
     font-style: normal;
