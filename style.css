@@ -286,7 +286,7 @@ h2 {
 }
 
 input[type="text"] {
-    font-family: consolas, monospaced;
+    font-family: consolas, monospace;
 	font-weight: 400;
     font-style: normal;
     font-size: 18px;
