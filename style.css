@@ -1,3 +1,7 @@
+html {
+	overflow: hidden;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -297,4 +301,12 @@ input[type="text"] {
     border-radius: 100%;
     opacity: 1;
     z-index: -2000;
+}
+
+.uniDiv {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	z-index: -400;
+	display: block;
 }
