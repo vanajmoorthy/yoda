@@ -310,3 +310,10 @@ input[type="text"] {
 	z-index: -400;
 	display: block;
 }
+
+#sketch-div {
+	position: absolute;
+	z-index: -500;
+	width: 100vw;
+	height: 100vh;
+}
