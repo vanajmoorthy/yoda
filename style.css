@@ -271,13 +271,18 @@ h2 {
 
 .input-field {
 	margin: auto;
-	margin-bottom: 420px;
+	margin-top: 50px;
+	margin-bottom: 220px;
 	color: #fafafaf6;
 	font-family: europa, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	margin-left: 40px;
 	margin-right: 40px;
+}
+
+#output {
+	/* display: none; */
 }
 
 .input-box {

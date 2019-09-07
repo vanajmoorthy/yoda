@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/hjk6uuj.css">
     <meta name="viewport" content="width=device-width, initial-scale=0.9, user-scalable=no">
     <script src="stars.js"></script>
-    <script src="bundle.js"></script>
+    <script src="index.js"></script>
     <script src="p5.min.js"></script>
     <title>English2Yoda</title>
 
@@ -23,10 +23,11 @@
         <h1>English2Yoda</h1>
         <h2>Please enter your text below</h2>
 
-        <form id="input-text" onsubmit="sendRequest(); return false">
-            <input class="input-box" type="text" name="input"><br>
+        <form onsubmit="yodify(); return false">
+            <input class="input-box" type="text" id="text" name="input"><br>
         </form>
 
+        <h2 id="output">Output: <span id="output"></span></h2>
     </div>
 
     <div id="yoda">
@@ -54,7 +55,7 @@
             <div id="chin"></div>
         </div>
     </div>
-    
+
     <div id="sketch-div"></div>
 </body>
 
