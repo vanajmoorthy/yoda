@@ -3,14 +3,9 @@ function yodify() {
 
 	var input = document.getElementById("text").value;
 	var encoded = encodeURIComponent(input);
-	var url = "https://api.funtranslations.com/translate/yoda.json?text=";
-	var toSend = url + encoded;
+	var url = `https://api.funtranslations.com/translate/yoda.json?text=${encoded}`;
 
-	request.open(
-		"GET",
-		toSend,
-		true
-	);
+	request.open("GET", url, true);
 
 	request.onload = function() {
 		var data = JSON.parse(this.response);
@@ -19,4 +14,4 @@ function yodify() {
 	};
 
 	request.send();
-};
+}
